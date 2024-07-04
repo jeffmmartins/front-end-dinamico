@@ -20,3 +20,19 @@ console.log(todosId)
 // Query Selector 
 const selctor = document.querySelector('body > input')
 console.log(selctor)
+
+const paragrafos = document.querySelectorAll('p')
+console.log(paragrafos)
+
+console.clear()
+
+
+const primeiroParagrafo = document.querySelector('p.paragrafo')
+console.log(primeiroParagrafo)
+
+// pega o conteudo que está dentro da tag.
+console.log('conteudo:', primeiroParagrafo.textContent)
+console.log('innerHTML:', primeiroParagrafo.innerHTML)
+
+// primeiroParagrafo.textContent = "outra coisa"
+primeiroParagrafo.innerHTML = "<strong> outra coisa </strong>"
