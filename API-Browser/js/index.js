@@ -4,6 +4,12 @@ const contadorElemento  = document.querySelector('#contador')
 // adicionando eventos 
 // target é quem disparou o evento
 // quando esse evento acontecer uma função sera disparada
-button.addEventListener('click', (event) => {
-
+buttonAumentar.addEventListener('click', (event) => {
+const valorAtual = Number(contadorElemento.textContent)
+contadorElemento.textContent = valorAtual + 1
 })
+
+buttonDiminuir.addEventListener('click', (event) => {
+    const valorAtual = Number(contadorElemento.textContent)
+    contadorElemento.textContent = valorAtual - 1
+    })
