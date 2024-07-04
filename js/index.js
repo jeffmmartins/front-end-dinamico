@@ -12,3 +12,7 @@ console.log(todosparagrafo)
 // seleciona pela tage name, leva como nodeList 
 const emailInput = document.getElementsByName("email")
 console.log(emailInput)
+
+// selecionando pelo id 
+const todosId = document.getElementById('js-logo')
+console.log(todosId)
