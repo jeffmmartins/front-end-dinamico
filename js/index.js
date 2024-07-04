@@ -16,3 +16,7 @@ console.log(emailInput)
 // selecionando pelo id 
 const todosId = document.getElementById('js-logo')
 console.log(todosId)
+
+// Query Selector 
+const selctor = document.querySelector('body > input')
+console.log(selctor)
