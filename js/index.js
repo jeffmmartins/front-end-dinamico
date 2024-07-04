@@ -26,7 +26,7 @@ console.log(paragrafos)
 
 console.clear()
 
-
+// acessando ou alterando o conteudo 
 const primeiroParagrafo = document.querySelector('p.paragrafo')
 console.log(primeiroParagrafo)
 
@@ -36,3 +36,23 @@ console.log('innerHTML:', primeiroParagrafo.innerHTML)
 
 // primeiroParagrafo.textContent = "outra coisa"
 primeiroParagrafo.innerHTML = "<strong> outra coisa </strong>"
+console.clear()
+
+// pega o valor e define valor 
+emailInput[0].value = "teste"
+
+// criando elementos na pagina html 
+const listaHTML = document.querySelector('ul#lista')
+const listaLis = document.querySelectorAll('ul>li') // pegando todas as lis 
+
+const novaTagLi = document.createElement('li') // criando uma tag LI
+novaTagLi.textContent = "Segundo Item " // adcicionando um texto dentro da tag LI
+console.log(novaTagLi)
+
+// jogar dentro do HTML
+//listaHTML.appendChild(novaTagLi)
+
+listaHTML.insertBefore(novaTagLi, listaLis[1])
+
+// Remover elementos 
+listaHTML.removeChild(listaLis[0])
