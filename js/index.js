@@ -8,3 +8,7 @@ console.log(todoH1) // aparece com um array , consigo acessar pela posição
 // Pelo nome da Classe 
 const todosparagrafo = document.getElementsByClassName("paragrafo")
 console.log(todosparagrafo)
+
+// seleciona pela tage name, leva como nodeList 
+const emailInput = document.getElementsByName("email")
+console.log(emailInput)
