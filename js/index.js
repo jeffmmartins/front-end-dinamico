@@ -1,6 +1,10 @@
 console.log(document.title)
 console.log(document.url)
 
-//Selecionar elementos da nossa página 
+//Selecionar elementos da nossa página pelo nome da tag 
 const todoH1 = document.getElementsByTagName('h1')
 console.log(todoH1) // aparece com um array , consigo acessar pela posição 
+
+// Pelo nome da Classe 
+const todosparagrafo = document.getElementsByClassName("paragrafo")
+console.log(todosparagrafo)
