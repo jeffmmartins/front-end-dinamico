@@ -8,3 +8,7 @@ body {
     background-color: #222;
     color: white;
 }
+
+h1 {
+    margin: 2rem 1rem;
+}
