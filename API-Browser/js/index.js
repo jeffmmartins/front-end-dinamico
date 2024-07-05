@@ -38,9 +38,26 @@ console.log(buttonDiminuir.classList)
 
 const themeButton = document.querySelector('#theme')
 let darkTheme = false
+// representa o momento que carrega a página 
+window.onload = () => {
+    const isDarkThemeStorage= localStorage.getItem('isDarkTheme')
+    darkTheme = isDarkThemeStorage === "true";
+    const body = document.querySelector('body')
+    
+    if(darkTheme) {
+        body.style.backgroundColor = 'black'
+        body.style.color = 'white'
+    } else {
+        body.style.backgroundColor = 'white'
+        body.style.color = 'black'
+    }
+}
 
 themeButton.addEventListener('click', () => {
     darkTheme = !darkTheme
+
+    localStorage.setItem('isDarkTheme', darkTheme)
+
 
     const body = document.querySelector('body')
     
